@@ -1,0 +1,143 @@
+#obraz {
+	height: 100px;
+	background-image: url("images/ulamki.png");
+	width: 750px;
+	float: left;
+	margin-left: -5px;
+}
+
+#obraz input {
+	width: 50px;
+	font-size: 20px;
+	text-align: center;
+}
+
+#licznik1s {
+	margin-left: 72px;
+	margin-top: 5px;
+	float: left;
+}
+
+#mianownik1s {
+	float: left;
+	margin-left: 72px;
+	margin-top: 16px;
+	
+}
+
+#licznik2s {
+	float: left;
+	margin-left: 130px;
+	margin-top: 5px;
+}
+
+#mianownik2s {
+	float: left;
+	margin-left: 130px;
+	margin-top: 16px;
+}
+
+#mianownik3s {
+	float: left;
+	margin-left: 132px;
+	margin-top: 16px;
+}
+
+#licznik3s {
+	float: left;
+	margin-left: 132px;
+	margin-top: 5px;
+}
+
+#caloscs {
+	float: left;
+	margin-left: 590px;
+	margin-top: -80px;
+}
+#caloscc input {
+	font-size: 50px;
+	width: 54px;
+}
+
+#licznik4s {
+	float: left;
+	margin-left: 188px;
+	margin-top: 5px;
+}
+
+#mianownik4s {
+	float: left;
+	margin-left: 188px;
+	margin-top: 16px;
+}
+
+
+#zadanie {
+	width: 750px;
+	display: inline;
+}
+
+#punktacja {
+	float: left;
+	font-size: 20px;
+	margin-left: 40px;
+	margin-top: 40px;
+	border: 1px solid transparent;
+	padding-left: 23px;
+	padding-right: 31px;
+	padding-bottom: 10px;
+}
+
+#ulamki .btn {
+	width: 120px !important;
+	margin-left: 760px;
+	margin-top: -102px;
+}
+
+#poziom {
+	font-size: 28px;
+	font-weight: 600;
+}
+
+#strzalki {
+	background-image: url("images/strzalki.png");
+	height: 100px;
+	background-repeat: no-repeat;
+	margin-top: 40px;
+	margin-left: 185px;
+}
+
+#punktacja {
+	float: left;
+}
+
+#brudnopis {
+	float: left;
+	margin-top: 40px;
+	margin-left: 105px;
+}
+
+#dol {
+	float: left;
+	margin-top: 64px;
+}
+
+#brudnopis2 {
+	font-size: 15px;
+	background-color: #FFFFFF;
+	width: 650px;
+	height: 222px;
+}
+
+#czapka {
+	background-image: url("images/123.png");
+	height: 170px;
+	background-repeat: no-repeat;
+	width: 290px;
+	margin-left: 920px;
+	margin-top: -70px;
+}
+
+#zadanie2 {
+	display: inline;
+}

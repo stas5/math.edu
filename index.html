@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Math.edu</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+    <link href="modules/tabliczka/style.css" rel="stylesheet">
+    <link href="modules/ulamki/style.css" rel="stylesheet">
+    <link href="modules/rownania/style.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index" onload="tabliczka_losowanie(); ulamki_losowanie(); rownania_start()">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top"><big>(</big><b>math</b><big>)</big>edu<sup>beta</sup></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#moduly">Moduły</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#tabliczka">Tabliczka mnożenia</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#ulamki">Dodawanie ułamków</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#rownania">Wykresy równań</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">              
+                <div class="intro-heading"><big>(</big><b>math</b><big>)</big>edu</div>
+                <a href="#moduly" class="page-scroll btn btn-xl">Zobacz więcej</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="moduly">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Dostępne moduły</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-remove fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Tabliczka mnożenia</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-plus fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Dodawanie ułamków</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-line-chart fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Wykresy równań</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tabliczka -->
+    <section id="tabliczka" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Tabliczka mnożenia</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 text-center" id="obraz">
+	            <form id="tabl" action="#">
+	                <input id="pierwsza" type="text" name="pierwsza" disabled="disabled" />
+	                <input id="druga" type="text" name="druga" disabled="disabled" />
+	                <input id="wynik" type="text" name="wynik" />
+	                <input class="btn btn-primary" type="button" onclick="tabliczka_mnozenie()" value="Wyślij"/>
+	            </form>
+                </div>
+                <div class="col-sm-4">
+	            <p id="tries">Próba: 1</p>
+	            <p class="text-success" id="goodanswers">Poprawne odpowiedzi: 0</p>
+	            <p class="text-danger" id="lifes">Zostało żyć: 2</p>
+	            <input class="btn btn-default" type="button" onclick="tabliczka_zasady()" value="Zasady gry" />		
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid Section -->
+    <section id="ulamki">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Dodawanie ułamków zwykłych</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div id="strzalki"></div>
+	    <div id="zadanie">
+	        <div id="zadanie2">
+		    <div id="obraz">
+		        <form id ="wsio" action="#">
+		            <input id = "licznik1s" type="text" name="licznik1s" disabled="disabled" />
+		            <input id = "licznik2s" type="text" name="licznik2s" disabled="disabled" />
+		            <input id = "licznik3s" type="text" name="licznik3s" />
+		            <input id = "licznik4s" type="text" name="licznik4s" />
+				
+		            <input id = "mianownik1s" type="text" name="mianownik1s" disabled="disabled" />
+		            <input id = "mianownik2s" type="text" name="mianownik2s" disabled="disabled" />
+		            <input id = "mianownik3s" type="text" name="mianownik3s" />
+		            <input id = "mianownik4s" type="text" name="mianownik4s" />
+
+		            <div id="caloscc">
+			        <input id = "caloscs" type="text" name="calosc" />
+		            </div>
+
+		            <input class="btn btn-primary" type="button" onclick="ulamki_dodawanielicznikow()" value="Wyślij"/>
+		        </form>
+		    </div>
+		    <div id="czapka"></div>
+	        </div>
+	        <div id="dol">
+		    <div id="punktacja">
+		        <p id="poziom">Poziom: 1/3</p>
+		        <p id="proby">Przykład: 1</p>
+		        <p class="text-success" id="poprawne">Poprawne odpowiedzi: 0</p>
+		        <p class="text-danger" id="bledne">Błędne odpowiedzi: 0</p>
+		    </div>
+		    <div id="brudnopis">
+		        <form action="...">
+		            <textarea id="brudnopis2" name="nazwa" placeholder="Miejsce na Twoje notatki"></textarea>
+		        </form>
+		    </div>
+	        </div>	
+            </div>
+        </div>
+    </div>
+    </section>
+    
+    <!-- Równania -->
+    <section id="rownania" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Wykresy równań matematycznych</h2>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Navigation -->
+        <div class="container">
+                <div>
+                    <ul class="nav navbar-nav" id="module-nav">
+                        <li>
+                            <span onclick="rownania_calcFuncSet()">Układ równań</span>
+                        </li>
+                        <li>
+                            <span onclick="rownania_calcQuadFunc()">Funkcja kwadratowa</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+    
+        <!-- Page Content -->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 text-center">
+                    <form class="equation_panel" name="f1" id="f1">
+                        <div class="equation_controller">	
+                            <input name="a1" size="4" value="-2" type="number" min="-10" max="10" step="0.5" title="wybierz liczby z przedzialu -10 do 10"/> x + 
+                            <input name="b1" size="4" value="4" type="number" min="-10" max="10" step="0.5" title="wybierz liczby z przedzialu -10 do 10"/> y = 
+                            <input name="c1" size="4" value="0" type="number" min="-10" max="10" step="0.5" title="wybierz liczby z przedzialu -10 do 10"/><br />
+			    <input name="a2" size="4" value="3" type="number" min="-10" max="10" step="0.5" title="wybierz liczby z przedzialu -10 do 10"/> x + 
+                            <input name="b2" size="4" value="2" type="number" min="-10" max="10" step="0.5" title="wybierz liczby z przedzialu -10 do 10"/> y = 
+                            <input name="c2" size="4" value="0" type="number" min="-10" max="10" step="0.5" title="wybierz liczby z przedzialu -10 do 10"/>
+                        </div>
+		        <div class="equation_results">
+		            x<sub>r</sub> = <input name="x" size="20" type="text"/><br />
+                            y<sub>r</sub> = <input name="y" size="20" type="text"/>
+                        </div>
+                        <div class="equation_buttons">
+		            <input class="btn btn-primary" type="button" onclick="rownania_calcFuncSet()" value="Rozwiąż"/>
+                            <input class="btn btn-default" type="button" onclick="rownania_reset()" value="Wyczyść" />
+                        </div>
+                    </form>
+                    <form class="equation_panel" name="f2" id="f2">
+                        <div class="equation_controller">
+                            <input name="a1" size="4" value="2" type="number" min="-3" max="3" step="0.5" title="wybierz liczby z przedzialu -3 do 3"> x<sup>2</sup> + 
+                            <input name="b1" size="4" value="1" type="number" min="-3" max="3" step="0.5" title="Podaj liczby z przedzialu -3 do 3"> x +
+                            <input name="c1" size="4" value="-3" type="number" min="-3" max="3" step="0.5" title="Podaj liczby z przedzialu -3 do 3"> = 0
+                        </div>
+		        <div class="equation_results">
+		            x<sub>1</sub> = <input name="x1" size="20" type="text"/><br />
+                            x<sub>2</sub> = <input name="x2" size="20" type="text"/>
+                        </div>
+                        <div class="equation_buttons">
+		            <input class="btn btn-primary" type="button" onclick="rownania_calcQuadFunc()" value="Rozwiąż"/>
+                            <input class="btn btn-default" type="button" onclick="rownania_reset()" value="Wyczyść" />
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm-8 text-center">
+                    <div class="canvas_holder">
+                        <canvas id="example" width="390" height="520"></canvas>
+                    </div>
+                 </div>   
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Your Website 2014</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
+    <script src="modules/tabliczka/script.js"></script>
+    <script src="modules/ulamki/script.js"></script>
+    <script src="modules/rownania/script.js"></script>
+
+</body>
+
+</html>

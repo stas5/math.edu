@@ -1,0 +1,44 @@
+#rownania { height: 1300px; }
+
+@media (min-width: 768px) {
+    #rownania { height: 1000px; }
+}
+
+.canvas_holder {
+    width: 520px;
+    height: 520px;
+    margin: 0 auto;
+}
+
+.equation_controller, .equation_results, .equation_buttons { margin-top: 15px; }
+.equation_controller input, .equation_results input, .equation_buttons input { margin-bottom: 5px; }
+
+/* Bootstrap span fixes */
+.navbar-nav > li > span {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+
+.nav > li > span {
+    position: relative;
+    display: block;
+    padding: 15px;
+}
+
+.navbar-default .navbar-nav > li > span {
+  color: #777;
+}
+
+.navbar-default .navbar-nav > li > span:hover,
+.navbar-default .navbar-nav > li > span:focus {
+  color: #333;
+  background-color: transparent;
+}
+
+@media (min-width: 768px) {
+    .navbar-nav > li > span {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}

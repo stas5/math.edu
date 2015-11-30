@@ -1,0 +1,42 @@
+#tabliczka .col-sm-8 {
+	height: 100px;
+	margin-left: -5px;
+	margin-top: 100px;
+	background-image: url("images/tabl.png");
+}
+
+#tabliczka .col-sm-8 input {
+	width: 50px;
+	height: 60px;
+	font-size: 25px;
+	text-align: center;
+}
+
+#tabliczka #pierwsza {
+	margin-left: 80px;
+	margin-top: 10px;
+	float: left;
+}
+
+#tabliczka #druga {
+	float: left;
+	margin-left: 115px;
+	margin-top: 10px;					
+}
+
+#tabliczka #wynik {
+	float: left;
+	margin-left: 130px;
+	margin-top: 10px;
+}
+
+#tabliczka .col-sm-8 .btn {
+	width: 120px !important;
+	margin-left: 430px;
+	margin-top: -82px;
+}
+					
+#tabliczka .col-sm-4 {
+	font-size: 20px;
+	margin-top: 60px;
+}
