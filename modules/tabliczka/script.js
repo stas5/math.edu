@@ -2,24 +2,24 @@ function tabliczka_losowanie()
 {
 	if (answers <= 4)
 	{
-			a = (Math.floor((Math.random() * 5) + 1))*1; 
-			document.forms['tabl'].pierwsza.value=a*1;
-			b = (Math.floor((Math.random() * 5) + 1))*1;
-			document.forms['tabl'].druga.value=b*1;
+			jeden = (Math.floor((Math.random() * 5) + 1))*1; 
+			document.forms['tabl'].pierwsza.value=jeden*1;
+			dwa = (Math.floor((Math.random() * 5) + 1))*1;
+			document.forms['tabl'].druga.value=dwa*1;
 	}
 	if (answers >= 5 && answers <9)
 	{
-			a = (Math.floor((Math.random() * 4) + 6))*1; 
-			document.forms['tabl'].pierwsza.value=a*1;
-			b = (Math.floor((Math.random() * 4) + 6))*1;
-			document.forms['tabl'].druga.value=b*1;
+			jeden = (Math.floor((Math.random() * 4) + 6))*1; 
+			document.forms['tabl'].pierwsza.value=jeden*1;
+			dwa = (Math.floor((Math.random() * 4) + 6))*1;
+			document.forms['tabl'].druga.value=dwa*1;
 	}
 	if (answers == 10)
 	{
-			a = (Math.floor((Math.random() * 5) + 1))*1; 
-			document.forms['tabl'].pierwsza.value=a*1;
-			b = (Math.floor((Math.random() * 5) + 1))*1;
-			document.forms['tabl'].druga.value=b*1;
+			jeden = (Math.floor((Math.random() * 5) + 1))*1; 
+			document.forms['tabl'].pierwsza.value=jeden*1;
+			dwa = (Math.floor((Math.random() * 5) + 1))*1;
+			document.forms['tabl'].druga.value=dwa*1;
 	}
 }
 
@@ -30,13 +30,13 @@ var lifes = 2;
 
 function tabliczka_zasady()
 {
-	alert("Gra jest podzielona na 2 etapy trudności. Ukończymy grę dopiero, gdy odpowiemy poprawnie 10 razy poprawnie. W grze możesz popełnić tylko 2 błędy. Powodzenia!");
+	alert("Przeznaczeniem gry jest utrwalenie tabliczki mnożenia. Gra kończy się, gdy gracz odpowie 10 razy poprawnie, przy czym może popełnić tylko 2 błędy.");
 }
 
 function tabliczka_mnozenie()
 {
 	var wynikmn = document.forms['tabl'].wynik.value;
-	if (wynikmn==a*b)
+	if (wynikmn==jeden*dwa)
 	{
 		alert("Poprawna odpowiedź");
 		$(function()
@@ -44,7 +44,7 @@ function tabliczka_mnozenie()
 			tries++;
 			$('#tries').text("Próba: "+tries);
 			goodanswers++;
-			$('#goodanswers').text("Poprawne odpowiedzi: "+goodanswers);
+			$('#goodanswers').text("Poprawne odpowiedzi: "+goodanswers+"/10");
 			tabliczka_losowanie();
 			wynik.value="";
 			answers++;
@@ -52,8 +52,7 @@ function tabliczka_mnozenie()
 	}
 	else
 	{
-		alert("Błędna odpowiedź");
-		alert("Poprawna odpowiedź wynosi: "+a*b);
+		alert("Błędna odpowiedź\nPoprawna odpowiedź wynosi: "+jeden*dwa);
 		$(function()
 		{
 			tries++;
@@ -67,6 +66,10 @@ function tabliczka_mnozenie()
 				alert("Przegrałeś! Musisz zacząć od nowa!");
 				answers = 0;
 				lifes = 2;
+				tries = 1;
+				goodanswers = 0;
+				$('#tries').text("Próba: "+tries);
+				$('#goodanswers').text("Poprawne odpowiedzi: "+goodanswers+"/10");
 				$('#lifes').text("Zostało żyć: "+lifes);
 			}
 		});
@@ -80,7 +83,7 @@ function tabliczka_mnozenie()
 		lifes = 2;
 		tabliczka_losowanie();
 		$('#tries').text("Próba: "+tries);
-		$('#goodanswers').text("Poprawne odpowiedzi: "+goodanswers);
+		$('#goodanswers').text("Poprawne odpowiedzi: "+goodanswers+"/10");
 		$('#lifes').text("Zostało żyć: "+lifes);
 	}
 }

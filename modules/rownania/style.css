@@ -26,14 +26,15 @@
     padding: 15px;
 }
 
-.navbar-default .navbar-nav > li > span {
+.navbar-nav > li > span {
   color: #777;
 }
 
-.navbar-default .navbar-nav > li > span:hover,
-.navbar-default .navbar-nav > li > span:focus {
+.navbar-nav > li > span:hover,
+.navbar-nav > li > span:focus {
   color: #333;
   background-color: transparent;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
