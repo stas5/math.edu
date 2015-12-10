@@ -1,143 +1,217 @@
-#obraz {
-	height: 100px;
-	background-image: url("images/ulamki.png");
-	width: 750px;
-	float: left;
-	margin-left: -5px;
+body
+{
+	background-color:#F0F0F0;
+	margin-left:auto;
+	margin-right:auto;
 }
 
-#obraz input {
-	width: 50px;
-	font-size: 20px;
-	text-align: center;
+#container
+{
+	margin-left:auto;
+	margin-right:auto;
 }
 
-#licznik1s {
-	margin-left: 72px;
-	margin-top: 5px;
-	float: left;
+#baner
+{
+	width:100%;
+	height:100px;
+	background-color:#DEDEDE;
+	border-bottom:2px solid #CFCFCF;
+	text-align:center;
+	font-size:30px;
+	color:black;
+	margin-top:-40px;
 }
 
-#mianownik1s {
-	float: left;
-	margin-left: 72px;
-	margin-top: 16px;
-	
+#baner p 
+{
+	padding-top:35px;
+	font-weight:600;
+	letter-spacing:1px;
+	color:#3F3F3F;
 }
 
-#licznik2s {
-	float: left;
-	margin-left: 130px;
-	margin-top: 5px;
+#obraz
+{
+	height:100px;
+	background-image:url("ulamki.png");
+	width:750px;
+	float:left;
+	margin-left:-5px;
 }
 
-#mianownik2s {
-	float: left;
-	margin-left: 130px;
-	margin-top: 16px;
+#obraz input
+{
+	height:30px;
+	width:50px;
+	font-size:20px;
+	text-align:center;
 }
 
-#mianownik3s {
-	float: left;
-	margin-left: 132px;
-	margin-top: 16px;
+					#licznik1s
+					{
+						margin-left:69px;
+						margin-top:5px;
+						float:left;
+					}
+
+					#mianownik1s
+					{
+						float:left;
+						margin-left:69px;
+						margin-top:16px;
+						
+					}
+
+					#licznik2s
+					{
+						float:left;
+						margin-left:126px;
+						margin-top:5px;
+					}
+
+					#mianownik2s
+					{
+						float:left;
+						margin-left:126px;
+						margin-top:16px;
+					}
+					
+					#mianownik3s
+					{
+						float:left;
+						margin-left:129px;
+						margin-top:16px;
+					}
+					
+					#licznik3s
+					{
+						float:left;
+						margin-left:129px;
+						margin-top:5px;
+					}
+					
+					#caloscs
+					{
+						float:left;
+						margin-left:590px;
+						margin-top:-87px;
+					}
+					#caloscc input
+					{
+						height:80px;
+						font-size:50px;
+						width:54px;
+					}
+					
+					#licznik4s
+					{
+						float:left;
+						margin-left:186px;
+						margin-top:5px;
+					}
+					
+					#mianownik4s
+					{
+						float:left;
+						margin-left:186px;
+						margin-top:16px;
+					}
+					
+
+#zadanie
+{
+	width:750px;
+	display:inline;
+}
+					
+#punktacja
+{
+	float:left;
+	font-size:20px;
+	margin-left:40px;
+	margin-top:40px;
+	border:1px solid #6F6F6F;
+	padding-left:23px;
+	padding-right:31px;
+	padding-bottom:10px;
+	width:225px;
 }
 
-#licznik3s {
-	float: left;
-	margin-left: 132px;
-	margin-top: 5px;
+#przycisk
+{
+	margin-left:760px;
+	margin-top:-59px;
+	float:left;
 }
 
-#caloscs {
-	float: left;
-	margin-left: 590px;
-	margin-top: -80px;
-}
-#caloscc input {
-	font-size: 50px;
-	width: 54px;
+#przyciskc input
+{
+	width:100px;
 }
 
-#licznik4s {
-	float: left;
-	margin-left: 188px;
-	margin-top: 5px;
+#poprawne
+{
+	color:green;
 }
 
-#mianownik4s {
-	float: left;
-	margin-left: 188px;
-	margin-top: 16px;
+#bledne
+{
+	color:red;
 }
 
-
-#zadanie {
-	width: 750px;
-	display: inline;
+#poziom
+{
+	font-size:28px;
+	font-weight:600;
 }
 
-#punktacja {
-	float: left;
-	font-size: 20px;
-	margin-left: 40px;
-	margin-top: 40px;
-	border: 1px solid transparent;
-	padding-left: 23px;
-	padding-right: 31px;
-	padding-bottom: 10px;
-}
-
-#ulamki .btn {
-	width: 120px !important;
-	margin-left: 760px;
-	margin-top: -102px;
-}
-
-#poziom {
-	font-size: 28px;
-	font-weight: 600;
-}
-
-#strzalki {
-	background-image: url("images/strzalki.png");
-	height: 100px;
+#strzalki
+{
+	background-image:url("strzalki.png");
+	height:100px;
 	background-repeat: no-repeat;
-	margin-top: 40px;
-	margin-left: 185px;
+	margin-top:40px;
+	margin-left:185px;
 }
 
-#punktacja {
-	float: left;
+#punktacja
+{
+	float:left;
 }
 
-#brudnopis {
-	float: left;
-	margin-top: 40px;
-	margin-left: 105px;
+#brudnopis
+{
+	float:left;
+	margin-top:42px;
+	margin-left:105px;
 }
 
-#dol {
-	float: left;
-	margin-top: 64px;
+#dol
+{
+	float:left;
+	margin-top:64px;
 }
 
-#brudnopis2 {
-	font-size: 15px;
-	background-color: #FFFFFF;
-	width: 650px;
-	height: 200px;
+#brudnopis2
+{
+	font-size:15px;
+	background-color:#FFFFFF;
+	width:650px;
+	height:222px;
 }
 
-#czapka {
-	background-image: url("images/123.png");
-	height: 170px;
+#czapka
+{
+	background-image:url("123.png");
+	height:170px;
 	background-repeat: no-repeat;
-	width: 290px;
-	margin-left: 920px;
-	margin-top: -70px;
+	width:290px;
+	margin-left:920px;
+	margin-top:-70px;
 }
 
-#zadanie2 {
-	display: inline;
+#zadanie2
+{
+	display:inline;
 }
