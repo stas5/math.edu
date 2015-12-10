@@ -1,4 +1,4 @@
-function ulamki_NWD(e, f) {
+function NWD(e, f) {
   while (e!=f) { 
     if (e<f) f = f-e; 
     else e = e-f;
@@ -9,9 +9,8 @@ function ulamki_NWD(e, f) {
 		var proba=1;
 		var poprawna=0;
 		var bledna=0;
-function ulamki_dodawanielicznikow()
+function dodawanielicznikow()
 {
-
 	var licznik3 = document.forms['wsio'].licznik3s.value;
 	var licznik4 = document.forms['wsio'].licznik4s.value;
 
@@ -29,14 +28,14 @@ function ulamki_dodawanielicznikow()
 	
 	var lwynik=(lx1+lx2)*1;
 	var mwynik=mx1*1;
-	var nwd = ulamki_NWD(lwynik, mwynik);
+	var nwd = NWD(lwynik, mwynik);
 	lwynik=(lwynik/nwd)*1;
 	mwynik=(mwynik/nwd)*1;
 		if(lwynik>mwynik){
 		var calosc = Math.floor((lwynik/mwynik));
 		var caloscl = (lwynik%mwynik);
 		var caloscm = mwynik;
-	var nwd = ulamki_NWD(lwynik, mwynik);
+	var nwd = NWD(lwynik, mwynik);
 	lwynik=(lwynik/nwd)*1;
 	mwynik=(mwynik/nwd)*1;
 		
@@ -45,7 +44,7 @@ function ulamki_dodawanielicznikow()
 		var calosc = 0;
 		var caloscl = lwynik;
 		var caloscm = mwynik;
-	var nwd = ulamki_NWD(lwynik, mwynik);
+	var nwd = NWD(lwynik, mwynik);
 	lwynik=(lwynik/nwd)*1;
 	mwynik=(mwynik/nwd)*1;
 		
@@ -59,14 +58,14 @@ function ulamki_dodawanielicznikow()
 	mwynik=mwynik;
 	
 		
-	var nwd = ulamki_NWD(lwynik, mwynik);
+	var nwd = NWD(lwynik, mwynik);
 	lwynik=(lwynik/nwd)*1;
 	mwynik=(mwynik/nwd)*1;
 		if(lwynik>mwynik){
 		var calosc = Math.floor((lwynik/mwynik));
 		var caloscl = (lwynik%mwynik);
 		var caloscm = mwynik;
-	var nwd = ulamki_NWD(lwynik, mwynik);
+	var nwd = NWD(lwynik, mwynik);
 	lwynik=(lwynik/nwd)*1;
 	mwynik=(mwynik/nwd)*1;
 		
@@ -90,14 +89,14 @@ function ulamki_dodawanielicznikow()
 			poprawna++;
 			$('#poprawne').text("Poprawne odpowiedzi: "+poprawna);
 			if(proba<11){
-			ulamki_losowanie();
+			losowanie();
 			}
 			else if(proba==11){
-				if(poprawna==9)
+				if(poprawna>=9)
 				{
 			$('#proby').text("Przykład: 10");
 			alert("Ukończyłeś pierwszy poziom z wynikiem "+poprawna+"/10. Zapraszamy do kolejnego poziomu!");
-			ulamki_losowanie2();
+			losowanie2();
 			bledna=0;
 			poprawna=0;
 			$('#poprawne').text("Poprawne odpowiedzi: 0");
@@ -109,13 +108,14 @@ function ulamki_dodawanielicznikow()
 				
 				
 				else{
-				poprawna=0;
+				
 				bledna=0;
 				$('#proby').text("Przykład: 10");
 				alert("W pierwszym poziomie uzyskałeś wynik "+poprawna+"/10. To za mało, by przejść do kolejnego poziomu. Spróbuj jeszcze raz");
+				poprawna=0;
 				if((proba>=11)){
 				$('#bledne').text("Błędne odpowiedzi: 0");
-				ulamki_losowanie();
+				losowanie();
 				$('#proby').text("Przykład: 1");
 				proba=1;
 				}
@@ -127,7 +127,7 @@ function ulamki_dodawanielicznikow()
 				
 			}
 			else if((proba>11)&&(proba<21)){
-				ulamki_losowanie2();
+				losowanie2();
 				$('#proby').text("Przykład: "+(proba-10));
 				$('#poziom').text("Poziom: 2/3");	
 			
@@ -135,11 +135,11 @@ function ulamki_dodawanielicznikow()
 			
 			else if(proba==21){
 				
-				if(poprawna==9){
+				if(poprawna>=9){
 				
 			$('#proby').text("Przykład: 10");
 			alert("Ukończyłeś drugi poziom z wynikiem "+poprawna+"/10. Zapraszamy do ostatniego poziomu!");
-			ulamki_losowanie3();
+			losowanie3();
 			bledna=0;
 			poprawna=0;
 			$('#poprawne').text("Poprawne odpowiedzi: 0");
@@ -149,13 +149,14 @@ function ulamki_dodawanielicznikow()
 			}
 				
 				else{
-				poprawna=0;
+				
 				bledna=0;
 				$('#proby').text("Przykład: 10");
 				alert("W drugim poziomie uzyskałeś wynik "+poprawna+"/10. To za mało, by przejść do kolejnego poziomu. Spróbuj jeszcze raz");
+				poprawna=0;
 				if((proba>=21)&&(proba<31)){
 				$('#bledne').text("Błędne odpowiedzi: 0");
-				ulamki_losowanie2();
+				losowanie2();
 				$('#proby').text("Przykład: 1");
 				proba=11;
 
@@ -164,25 +165,26 @@ function ulamki_dodawanielicznikow()
     				
 			}
 				else if((proba>21)&&(proba<31)){
-				ulamki_losowanie3();
+				losowanie3();
 				$('#proby').text("Przykład: "+(proba-20));	
 			
 			}
 			else if(proba>=31){
-				if(poprawna==9){
+				if(poprawna>=9){
 			$('#proby').text("Przykład: 10");
 			alert("Ukończyłeś trzeci poziom z wynikiem "+poprawna+"/10");
 			alert("Gratuluję! Przeszedłeś całą grę!");
 			window.location.reload();
 			}
 				else{
-				poprawna=0;
+				
 				bledna=0;
 				$('#proby').text("Przykład: 10");
 				alert("W trzecim poziomie uzyskałeś wynik "+poprawna+"/10. To za mało, by przejść trzeci poziom. Spróbuj jeszcze raz");
+				poprawna=0;
 				if((proba>=21)&&(proba<=31)){
 				$('#bledne').text("Błędne odpowiedzi: 0");
-				ulamki_losowanie2();
+				losowanie2();
 				$('#proby').text("Przykład: 1");
 				proba=21;
 				}
@@ -207,36 +209,38 @@ function ulamki_dodawanielicznikow()
 			bledna++;
 			$('#bledne').text("Błędne odpowiedzi: "+bledna);
 			if(proba<11){
-			ulamki_losowanie();
+			losowanie();
 			}
 			else if(proba==11){
-				if(poprawna==9)
+				if(poprawna>=9)
 				{
-			$('#proby').text("Przykład: 10");
-			alert("Ukończyłeś pierwszy poziom z wynikiem "+poprawna+"/10. Zapraszamy do kolejnego poziomu!");
-			ulamki_losowanie2();
-			bledna=0;
-			poprawna=0;
-			$('#poprawne').text("Poprawne odpowiedzi: 0");
-			$('#bledne').text("Błędne odpowiedzi: 0");
-			$('#proby').text("Przykład: "+(proba-10));
-			$('#poziom').text("Poziom: 2/3");
-			}
-				else{
+				$('#proby').text("Przykład: 10");
+				alert("Ukończyłeś pierwszy poziom z wynikiem "+poprawna+"/10. Zapraszamy do kolejnego poziomu!");
+				losowanie2();
+				bledna=0;
 				poprawna=0;
+				$('#poprawne').text("Poprawne odpowiedzi: 0");
+				$('#bledne').text("Błędne odpowiedzi: 0");
+				$('#proby').text("Przykład: "+(proba-10));
+				$('#poziom').text("Poziom: 2/3");
+				}
+				else{
+				
 				bledna=0;
 				$('#proby').text("Przykład: 10");
 				alert("W pierwszym poziomie uzyskałeś wynik "+poprawna+"/10. To za mało, by przejść do kolejnego poziomu. Spróbuj jeszcze raz");
+				poprawna=0;
 				if((proba>=11)){
 				$('#bledne').text("Błędne odpowiedzi: 0");
-				ulamki_losowanie();
+				$('#poprawne').text("Poprawne odpowiedzi: 0");
+				losowanie();
 				$('#proby').text("Przykład: 1");
 				proba=1;
 				}
 				}
-			}
+				}
 			else if((proba>11)&&(proba<21)){
-				ulamki_losowanie2();
+				losowanie2();
 				$('#proby').text("Przykład: "+(proba-10));
 				$('#poziom').text("Poziom: 2/3");	
 			
@@ -244,11 +248,11 @@ function ulamki_dodawanielicznikow()
 			
 			else if(proba==21){
 				
-				if(poprawna==9){
+				if(poprawna>=9){
 				
 			$('#proby').text("Przykład: 10");
 			alert("Ukończyłeś drugi poziom z wynikiem "+poprawna+"/10. Zapraszamy do ostatniego poziomu!");
-			ulamki_losowanie3();
+			losowanie3();
 			bledna=0;
 			poprawna=0;
 			$('#poprawne').text("Poprawne odpowiedzi: 0");
@@ -258,13 +262,15 @@ function ulamki_dodawanielicznikow()
 			}
 				
 				else{
-				poprawna=0;
+				
 				bledna=0;
 				$('#proby').text("Przykład: 10");
 				alert("W drugim poziomie uzyskałeś wynik "+poprawna+"/10. To za mało, by przejść do kolejnego poziomu. Spróbuj jeszcze raz");
+				poprawna=0;
 				if((proba>=21)&&(proba<31)){
 				$('#bledne').text("Błędne odpowiedzi: 0");
-				ulamki_losowanie2();
+				$('#poprawne').text("Poprawne odpowiedzi: 0");
+				losowanie2();
 				$('#proby').text("Przykład: 1");
 				proba=11;
 
@@ -273,24 +279,26 @@ function ulamki_dodawanielicznikow()
     				
 			}
 				else if((proba>21)&&(proba<31)){
-				ulamki_losowanie3();
+				losowanie3();
 				$('#proby').text("Przykład: "+(proba-20));	
 			
 			}
 			else if(proba>=31){
-				if(poprawna==9){
+				if(poprawna>=9){
 			$('#proby').text("Przykład: 10");
 			alert("Ukończyłeś trzeci poziom z wynikiem "+poprawna+"/10");
 			alert("Gratuluję! Przeszedłeś całą grę!");
 			window.location.reload();
 			}
 				else{
-				poprawna=0;
+				
 				bledna=0;
 				$('#proby').text("Przykład: 10");
 				alert("W trzecim poziomie uzyskałeś wynik "+poprawna+"/10. To za mało, by przejść trzeci poziom. Spróbuj jeszcze raz");
+				poprawna=0;
 				if((proba>=21)&&(proba<=31)){
 				$('#bledne').text("Błędne odpowiedzi: 0");
+				$('#poprawne').text("Poprawne odpowiedzi: 0");
 				losowanie2();
 				$('#proby').text("Przykład: 1");
 				proba=21;
@@ -311,7 +319,7 @@ function ulamki_dodawanielicznikow()
 		
 
 
-function ulamki_losowanie()
+function losowanie()
 {
 	a = (Math.floor((Math.random() * 4) + 1))*1; 
 	document.forms['wsio'].licznik1s.value=a*1;
@@ -323,7 +331,7 @@ function ulamki_losowanie()
 	document.forms['wsio'].mianownik2s.value=d*1;
 }
 
-function ulamki_losowanie2()
+function losowanie2()
 {
 	a = (Math.floor((Math.random() * 6) + 3))*1; 
 	document.forms['wsio'].licznik1s.value=a*1;
@@ -335,7 +343,7 @@ function ulamki_losowanie2()
 	document.forms['wsio'].mianownik2s.value=d*1;
 }
 
-function ulamki_losowanie3()
+function losowanie3()
 {
 	a = (Math.floor((Math.random() * 8) + 5))*1; 
 	document.forms['wsio'].licznik1s.value=a*1;
